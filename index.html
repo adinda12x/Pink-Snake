@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Snake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="arcade-window">
+    <!-- Top Header -->
+    <header class="top-bar">
+      <div class="title-group">
+        <span class="pixel-heart" aria-hidden="true">♥</span>
+        <h1>PINK SNAKE</h1>
+      </div>
+      <div class="top-controls">
+        <span class="deco-btn">−</span>
+        <span class="deco-btn">+</span>
+      </div>
+    </header>
+
+    <!-- Scoreboard -->
+    <section class="score-bar" aria-label="Scoreboard">
+      <div class="score-box">
+        <span class="label">SCORE</span>
+        <span id="score" class="value">00</span>
+      </div>
+      <div class="score-box">
+        <span class="label">BEST</span>
+        <span id="best-score" class="value">00</span>
+      </div>
+    </section>
+
+    <!-- Game Canvas Area -->
+    <section class="board-frame">
+      <canvas id="game-canvas" width="420" height="420"></canvas>
+
+      <!-- Start / Sweet Overlay -->
+      <div id="overlay" class="overlay">
+        <p id="overlay-title" class="overlay-title">PRESS SPACE</p>
+        <p id="overlay-sub" class="overlay-sub">OR AN ARROW KEY</p>
+      </div>
+    </section>
+
+    <!-- Footer Key Hints -->
+    <footer class="bottom-bar">
+      <div class="key-hint">ARROWS / WASD MOVE</div>
+      <button id="action-btn" class="key-hint action-btn" type="button">
+        SPACE <span id="action-label">START</span>
+      </button>
+      <div class="key-hint deco-dots">•••</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
